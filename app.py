@@ -42,7 +42,7 @@ st.sidebar.title("Opciones de Filtrado")
 
 # WIDGET 1: Filtro por Tipo de Establecimiento (MULTISELECT)
 categorias_seleccionadas = st.sidebar.multiselect(
-    '1. Selecciona el Tipo(s) de Establecimiento:',
+    '1. Selecciona el Tipo de Bebida:',
     options=COFFEE_COLUMNS, 
     default=[COFFEE_COLUMNS[0]] # Selecciona 'Coffee & Tea' por defecto
 )
@@ -62,6 +62,13 @@ min_stars = st.sidebar.slider(
 
 # Manejar el caso donde no hay categorías seleccionadas
 st.image("image_bi/bar_menu.jpg", width = 500)
+
+option = st.selectbox(
+    "What do you wan to order?",  # Label for the selectbox
+    ("MOcktail", "Wine", "Cocktail")  # Options for the user to choose from
+)
+
+st.write("You selected:", option)
 
 # =========================================================
 # === 4. GENERACIÓN DEL MAPA (Plotly Express) ===
