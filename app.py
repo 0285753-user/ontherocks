@@ -32,8 +32,7 @@ df =  COFFEE_COLUMNS
 
 
 # Aseguramos que el DataFrame principal solo contenga negocios relevantes
-condition = (df[COFFEE_COLUMNS] == 1).any(axis=1)
-df = df[condition]
+
 
 # =========================================================
 # === 2. WIDGETS DE FILTRADO ===
