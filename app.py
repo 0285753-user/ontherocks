@@ -79,7 +79,7 @@ else:
     st.write("You have not select anything yet.")
 
 
-st.title("Streamlit Button Example")
+st.title("Are you ready to order?")
 
 if st.button("Order my drink!"):
     st.write("Drink ordered!")
