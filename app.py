@@ -83,3 +83,17 @@ elif checked_b:
     st.write("You selected Specialities!")
 else:
     st.write("You have not select anything yet.")
+
+
+st.title("Streamlit Button Example")
+
+if st.button("Order my drink!"):
+    st.write("Drink ordered!")
+
+def on_button_click():
+    st.session_state["message"] = "Your drink is going to be ready in 5 minutes!"
+
+st.button("Click for callback", on_click=on_button_click)
+
+if "message" in st.session_state:
+    st.write(st.session_state["message"])
