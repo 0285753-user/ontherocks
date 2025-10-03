@@ -49,9 +49,9 @@ categorias_seleccionadas = st.sidebar.multiselect(
 
 # WIDGET 2: Filtro por Estrellas (Slider)
 min_stars = st.sidebar.slider(
-    '2. Calificación Mínima de Estrellas (stars):',
-    min_value=1.0, 
-    max_value=5.0, 
+    'Alcohol Content:',
+    min_value=0.0, 
+    max_value=10.0, 
     value=3.5, # Valor por defecto
     step=0.5  
 )
