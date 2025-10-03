@@ -29,7 +29,7 @@ df = pd.read_csv(url,index_col=0)
 
 # definiendo columnas del dataset
 df =  COFFEE_COLUMNS
-df = df[columns]
+
 
 # Aseguramos que el DataFrame principal solo contenga negocios relevantes
 condition = (df[COFFEE_COLUMNS] == 1).any(axis=1)
