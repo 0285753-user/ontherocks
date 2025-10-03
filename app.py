@@ -88,7 +88,7 @@ if st.button("Order my drink!"):
 def on_button_click():
     st.session_state["message"] = "You can order again!"
 
-st.button("Click for callback", on_click=on_button_click)
+st.button("Click for reorder", on_click=on_button_click)
 
 if "message" in st.session_state:
     st.write(st.session_state["message"])
