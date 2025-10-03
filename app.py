@@ -1,4 +1,4 @@
-# Sección de importación de módulos
+cialities# Sección de importación de módulos
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -16,7 +16,7 @@ COFFEE_COLUMNS = ['Wine',
     'Cocktails',
     'Drinks',
     'Mocktails',
-    'Bakeries',
+    'Specialities',
     'Destillates']
 
 # Seción para crear la GUI
