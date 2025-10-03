@@ -10,4 +10,4 @@ def show_header(text_title: str):
   with col2:
     st.title(text_title)
     st.caption(" Developed for show pourposes")
-    st.caption("On The Rocks Copyleft. Drink Responsibly")
+    st.caption("On The Rocks Copyleft")
