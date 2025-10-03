@@ -28,7 +28,7 @@ url = 'https://raw.githubusercontent.com/Roby20030202/BI_FINAL_PROJECT/refs/head
 df = pd.read_csv(url,index_col=0)
 
 # definiendo columnas del dataset
-columns = ['address','city','state','latitude','longitude','stars','review_count','is_open'] + COFFEE_COLUMNS
+columns =  COFFEE_COLUMNS
 df = df[columns]
 
 # Aseguramos que el DataFrame principal solo contenga negocios relevantes
