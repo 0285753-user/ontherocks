@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 import streamlit as st
-from Modules.UI.header import show_header
+from Modules.UI.Header import show_header
 
 # =========================================================
 # === 1. DEFINICIÓN DE COLUMNAS ===
