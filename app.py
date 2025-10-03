@@ -83,9 +83,10 @@ st.title("Streamlit Button Example")
 
 if st.button("Order my drink!"):
     st.write("Drink ordered!")
+    st.write("Your drink is going to be ready in 5 minutes!")
 
 def on_button_click():
-    st.session_state["message"] = "Your drink is going to be ready in 5 minutes!"
+    st.session_state["message"] = "You can order again!"
 
 st.button("Click for callback", on_click=on_button_click)
 
