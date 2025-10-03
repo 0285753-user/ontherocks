@@ -1,4 +1,4 @@
-da# Sección de importación de módulos
+# Sección de importación de módulos
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -63,7 +63,7 @@ min_stars = st.sidebar.slider(
 
 # Manejar el caso donde no hay categorías seleccionadas
 if not categorias_seleccionadas:
-    st.error("Por favor, selecciona al menos un tipo de establecimiento.")
+    st.error("Por favor, selecciona al menos un tipo de bebida.")
     # Usamos un DataFrame vacío para evitar errores en las gráficas
     df_filtrado_final = df.head(0) 
 else:
