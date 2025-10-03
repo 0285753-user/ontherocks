@@ -20,8 +20,6 @@ COFFEE_COLUMNS = ['Wine',
 # Seción para crear la GUI
 show_header("Name of Your Event")
 
-url = 'https://raw.githubusercontent.com/Roby20030202/BI_FINAL_PROJECT/refs/heads/main/filtered_yelp_NJ.csv'
-# url_mapa ya no es necesario
 
 df = pd.read_csv(url,index_col=0)
 
