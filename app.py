@@ -21,8 +21,6 @@ COFFEE_COLUMNS = ['Wine',
 show_header("Name of Your Event")
 
 
-df = pd.read_csv(url,index_col=0)
-
 # definiendo columnas del dataset
 df =  COFFEE_COLUMNS
 
