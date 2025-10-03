@@ -17,7 +17,7 @@ COFFEE_COLUMNS = ['Wine',
     'Drinks',
     'Mocktails',
     'Bakeries',
-    'Dstillates']
+    'Destillates']
 
 # Seción para crear la GUI
 show_header("Name of Your Event")
@@ -61,23 +61,7 @@ min_stars = st.sidebar.slider(
 # =========================================================
 
 # Manejar el caso donde no hay categorías seleccionadas
-if not categorias_seleccionadas:
-    st.error("Por favor, selecciona al menos un tipo de bebida.")
-    # Usamos un DataFrame vacío para evitar errores en las gráficas
-    df_filtrado_final = df.head(0) 
-else:
-    # PASO A: Filtrar por Categorías seleccionadas (¡Lógica Multiselect!)
-    # Creamos una máscara booleana: un negocio califica si es 1 en CUALQUIERA
-    # de las columnas seleccionadas (usando sum() > 0)
-    condicion_multiselect = (df[categorias_seleccionadas].sum(axis=1) >= 1)
-    df_categoria = df[condicion_multiselect].copy()
-
-    # PASO B: Filtrar el resultado anterior por la Calificación Mínima
-    df_filtrado_final = df_categoria[df_categoria['stars'] >= min_stars].copy()
-
-
-st.subheader(f"Mapa de Negocios Seleccionados")
-st.write(f"Mostrando **{len(df_filtrado_final)}** negocios con **{min_stars}** estrellas o más, en las categorías: **{', '.join(categorias_seleccionadas)}**.")
+st.image("image_bi/bar_menu.jpg", width = 500)
 
 # =========================================================
 # === 4. GENERACIÓN DEL MAPA (Plotly Express) ===
