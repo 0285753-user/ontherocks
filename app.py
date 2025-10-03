@@ -71,11 +71,15 @@ checked_b = st.checkbox("Cocktail")
 
 checked_c = st.checkbox("Mocktail")
 
+checked_d = st.checkbox("Specialities")
+
 if checked:
     st.write("You selected Wine!")
 elif checked_b:
     st.write("You selected Cocktail!")
 elif checked_b:
     st.write("You selected Mocktail!")
+elif checked_b:
+    st.write("You selected Specialities!")
 else:
     st.write("You have not select anything yet.")
