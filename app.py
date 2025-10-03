@@ -63,12 +63,22 @@ min_stars = st.sidebar.slider(
 # Manejar el caso donde no hay categorías seleccionadas
 st.image("image_bi/bar_menu.jpg", width = 500)
 
-option = st.selectbox(
-    "What do you wan to order?",  # Label for the selectbox
-    ("MOcktail", "Wine", "Cocktail")  # Options for the user to choose from
-)
+st.write("What do you want to order?")
 
-st.write("You selected:", option)
+checked = st.checkbox("Wine")
+
+checked_b = st.checkbox("Cocktail")
+
+checked_c = st.checkbox("Mocktail")
+
+if checked:
+    st.write("You selected Wine!")
+elif checked_b:
+    st.write("You selected Cocktail!")
+elif checked_b:
+    st.write("You selected Mocktail!")
+else:
+    st.write("You have not select anything yet.")
 
 # =========================================================
 # === 4. GENERACIÓN DEL MAPA (Plotly Express) ===
